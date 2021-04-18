@@ -1,7 +1,9 @@
 import Head from 'next/head'
 import ChartContainer from '../components/ChartContainer';
+import { getData } from './api/helado';
 
-export default function Home() {
+const Home = ({ data }) => {
+  console.log(data);
   return (
     <div>
       <Head>
@@ -10,5 +12,17 @@ export default function Home() {
       </Head>
       <ChartContainer />
     </div>
-  )
+  );
+};
+
+export async function getServerSideProps(context) {
+  const data = await getData();
+
+  return {
+    props: {
+      data,
+    }, // will be passed to the page component as props
+  }
 }
+
+export default Home;

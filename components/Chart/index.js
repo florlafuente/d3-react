@@ -11,6 +11,7 @@ const Wrapper = styled.div`
 
 const ChartWrapper = styled.div`
   border: 1px solid gray;
+  margin-top: 10px;
 `;
 
 const Rect = styled.rect`
@@ -83,7 +84,7 @@ const Chart = ({ data }) => {
   return (
     <Wrapper>
       <h1>D3 para React devs</h1>
-      <h2>Casos darios de COVID-19 en CABA</h2>
+      <h2>Casos diarios de COVID-19 en CABA</h2>
       <span>Fuente: <a href="https://covidstats.com.ar/" target="_blank">https://covidstats.com.ar/</a></span>
 
       <ChartWrapper>

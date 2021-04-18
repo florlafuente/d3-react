@@ -1,16 +1,15 @@
 import Head from 'next/head'
-import ChartContainer from '../components/ChartContainer';
-import { getData } from './api/helado';
+import Chart from '../components/Chart';
+import { getData } from './api/covid';
 
 const Home = ({ data }) => {
-  console.log(data);
   return (
     <div>
       <Head>
         <title>D3 data viz con React</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <ChartContainer />
+      <Chart data={data} />
     </div>
   );
 };
@@ -21,7 +20,7 @@ export async function getServerSideProps(context) {
   return {
     props: {
       data,
-    }, // will be passed to the page component as props
+    },
   }
 }
 

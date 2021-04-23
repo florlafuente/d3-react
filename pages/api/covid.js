@@ -2886,10 +2886,31 @@ export async function getData() {
   },
   {
     "fecha": "2021-04-17",
-    "fallecidos": 0,
-    "casos_dx": 597,
-    "diagnosticos": 869,
-    "casos_fa": 997
+    "fallecidos": 18,
+    "casos_dx": 2129,
+    "diagnosticos": 7780,
+    "casos_fa": 2809
+  },
+  {
+    "fecha": "2021-04-18",
+    "fallecidos": 12,
+    "casos_dx": 1853,
+    "diagnosticos": 6767,
+    "casos_fa": 2477
+  },
+  {
+    "fecha": "2021-04-19",
+    "fallecidos": 22,
+    "casos_dx": 2251,
+    "diagnosticos": 5584,
+    "casos_fa": 2331
+  },
+  {
+    "fecha": "2021-04-20",
+    "fallecidos": 10,
+    "casos_dx": 1966,
+    "diagnosticos": 4332,
+    "casos_fa": 2432
   }
 ])
 };
